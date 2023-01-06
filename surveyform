@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimosa Survey Form</title>
+    <link rel="stylesheet" href="surveyfrom.css">
+</head>
+<body>
+    <h1 id="title">Mimosa Survey Form</h1>
+    <p id="description">Thank you for visiting our resturant</p>
+    <form id="survey-form">
+    <label for="name" id="name-label">Name <input type="text" id="name" placeholder="please enter your name" required></label>
+    <label for="email" id="email-label">Email <input type="email" id="email" placeholder="please enter your email" required></label>
+    <label for="number" id="number-label">Age(optional) <input type="number" id="number" min="13" max="120" placeholder="age" required></label>
+   
+    <label for="dropdown">How about your meal?(stars)
+        <select id="dropdown" name="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    </label>
+    <label>What's your favorites?</label>
+    <label for="fish"><input id="fish" type="radio" name="meal" class="inline" value="100"> Fish</label>
+    <label for="pork"><input id="pork" type="radio" name="meal" class="inline" value="200"> Pork</label>
+    <label for="beef"><input id="beef" type="radio" name="meal" class="inline" value="300"> Beef</label>
+
+    <label for="source">How did you hear about us?
+    <label for="recommend"><input id="recommend" type="checkbox" name="source" class="inline" value="10"> friend's recommend</label>
+    <label for="ad" ><input id="ad" type="checkbox" name="source" class="inline" value="20"> advertisement</label>
+    <label for="internet"><input id="internet" type="checkbox" name="source" class="inline" value="30"> internet</label>
+    <label for="pass"><input id="pass" type="checkbox" name="source" class="inline" value="40"> pass by</label>
+    <label for="others"><input id="others" type="checkbox" name="source" class="inline" value="50"> others</label>
+</label>
+<label for="advice">Anything want to say?
+    <textarea id="advice" placeholder="please enter something..."></textarea>
+    </label>
+    <label><input id="submit" type="submit">
+    </label>
+</form>
+</body>
+</html>
